@@ -7,9 +7,21 @@
   packages = ["."]
   revision = "0d2466a2144e3206885424ced13af1ebf07a826a"
 
+[[projects]]
+  name = "github.com/mattn/go-sqlite3"
+  packages = ["."]
+  revision = "ca5e3819723d8eeaf170ad510e7da1d6d2e94a08"
+  version = "v1.2.0"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/net"
+  packages = ["context"]
+  revision = "0a9397675ba34b2845f758fe3cd68828369c6517"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "1c3f8e40cbba681e9ac59ef8c0407e86507ded15ca716e336ea3d98ef4f5a102"
+  inputs-digest = "5cf4ad24d8605377318548cc4da61725c07d24550d207ce694f9a61b0ab59fd3"
   solver-name = "gps-cdcl"
   solver-version = 1

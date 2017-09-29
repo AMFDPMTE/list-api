@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+rm -f db/db.sqlite3
+sqlite3 db/db.sqlite3 < db/schema.sql
+echo "DB recreated!"
