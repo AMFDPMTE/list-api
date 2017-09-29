@@ -7,10 +7,16 @@ RUN apk add --update --no-cache git libc-dev gcc
 RUN go get github.com/golang/dep && go install github.com/golang/dep/cmd/dep
 
 WORKDIR /go/src/github.com/AMFDPMTE/list-api
+
+# Copy dep file
+COPY Gopkg.lock .
+COPY Gopkg.toml .
+# Get dependencies
+RUN dep ensure -v --vendor-only
+
+# Copy all of the app
 COPY . .
 
-# Get dependencies
-RUN dep ensure -v
 # Compile code
 RUN go build
 

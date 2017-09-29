@@ -24,10 +24,12 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	res, err := stmt.Exec()
+	rows, err := stmt.Query()
 	if err != nil {
 		panic(err)
 	}
 
-	fmt.Println(res)
+	for rows.Next() {
+		fmt.Println(rows.Columns())
+	}
 }
