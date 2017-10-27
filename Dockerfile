@@ -20,4 +20,4 @@ COPY . .
 # Compile code
 RUN go build
 
-RUN ["./list-api"]
+CMD ["./list-api"]

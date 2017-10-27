@@ -14,6 +14,12 @@
   version = "v1.2.0"
 
 [[projects]]
+  name = "github.com/satori/go.uuid"
+  packages = ["."]
+  revision = "879c5887cd475cd7864858769793b2ceb0d44feb"
+  version = "v1.1.0"
+
+[[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
@@ -22,6 +28,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5cf4ad24d8605377318548cc4da61725c07d24550d207ce694f9a61b0ab59fd3"
+  inputs-digest = "d47b13ac7c68a137cab75427684a687a993c2480945c6c338460cc84bd94d45f"
   solver-name = "gps-cdcl"
   solver-version = 1
